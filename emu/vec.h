@@ -22,6 +22,7 @@ void vec_imm_shiftl_q128(NO_CPU, const uint8_t amount, union xmm_reg *dst);
 void vec_imm_shiftl_q64(NO_CPU, const uint8_t amount, union mm_reg *dst);
 void vec_imm_shiftr_q128(NO_CPU, const uint8_t amount, union xmm_reg *dst);
 void vec_imm_shiftr_q64(NO_CPU, const uint8_t amount, union mm_reg *dst);
+void vec_imm_shiftl_dq128(NO_CPU, const uint8_t amount, union xmm_reg *dst);
 void vec_shiftl_q128(NO_CPU, union xmm_reg *amount, union xmm_reg *dst);
 void vec_shiftr_q128(NO_CPU, union xmm_reg *amount, union xmm_reg *dst);
 void vec_add_b128(NO_CPU, union xmm_reg *src, union xmm_reg *dst);
@@ -48,6 +49,7 @@ void vec_single_fsub64(NO_CPU, const double *src, double *dst);
 void vec_single_fsub32(NO_CPU, const float *src, float *dst);
 void vec_single_fdiv64(NO_CPU, const double *src, double *dst);
 void vec_single_fdiv32(NO_CPU, const float *src, float *dst);
+void vec_single_fsqrt64(NO_CPU, const double *src, double *dst);
 
 void vec_single_fmax64(NO_CPU, const double *src, double *dst);
 void vec_single_fmin64(NO_CPU, const double *src, double *dst);

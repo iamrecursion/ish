@@ -6,6 +6,20 @@
 	objectVersion = 53;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		BB4A922324ED9402002F5A96 /* iSH pre */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BB4A922424ED9402002F5A96 /* Build configuration list for PBXAggregateTarget "iSH pre" */;
+			buildPhases = (
+				BB4A922A24ED9421002F5A96 /* Add icons to Info.plist */,
+			);
+			dependencies = (
+			);
+			name = "iSH pre";
+			productName = "iSH pre";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		22A25D792443572100391D8A /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A25D782443572100391D8A /* NetworkExtension.framework */; };
 		22A25D7B2443587400391D8A /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A25D7A2443587400391D8A /* CloudKit.framework */; };
@@ -39,6 +53,9 @@
 		BB2B4DAE231D998300CB578B /* term.css in Resources */ = {isa = PBXBuildFile; fileRef = BB4A53AF1FAA787900A72ACE /* term.css */; };
 		BB2B4DAF231D998300CB578B /* term.html in Resources */ = {isa = PBXBuildFile; fileRef = BB4A53A91FAA496700A72ACE /* term.html */; };
 		BB455E111FB37F6600AFB48B /* DelayedUITask.m in Sources */ = {isa = PBXBuildFile; fileRef = BB455E101FB37F6600AFB48B /* DelayedUITask.m */; };
+		BB4A922E24EDA461002F5A96 /* icon1337.png in Resources */ = {isa = PBXBuildFile; fileRef = BB4A922D24EDA461002F5A96 /* icon1337.png */; };
+		BB4A923024EDA55C002F5A96 /* colontildehash.png in Resources */ = {isa = PBXBuildFile; fileRef = BB4A922F24EDA55C002F5A96 /* colontildehash.png */; };
+		BB4A923224EDA560002F5A96 /* 3d.png in Resources */ = {isa = PBXBuildFile; fileRef = BB4A923124EDA560002F5A96 /* 3d.png */; };
 		BB60F55221573FCA003A4E52 /* BarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BB60F55121573FCA003A4E52 /* BarButton.m */; };
 		BB6DB261216435340047A611 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6DB260216435330047A611 /* libiconv.tbd */; };
 		BB78AB2B1FAD22440013E782 /* TerminalView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB78AB2A1FAD22440013E782 /* TerminalView.m */; };
@@ -62,6 +79,9 @@
 		BBBCE7E321D2F02200CA00B3 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBBCE7E521D2F02200CA00B3 /* About.storyboard */; };
 		BBBF7B5C2415CDBB00EC4C14 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BBBF7B5B2415CDBB00EC4C14 /* Settings.bundle */; };
 		BBBFE94921C5CFF100509DD5 /* NSError+ISHErrno.m in Sources */ = {isa = PBXBuildFile; fileRef = BB13F4DD21C5770000343E17 /* NSError+ISHErrno.m */; };
+		BBC8297E24EDAC11009D042C /* idollarhash.png in Resources */ = {isa = PBXBuildFile; fileRef = BBC8297D24EDAC11009D042C /* idollarhash.png */; };
+		BBC8298124EDACBB009D042C /* iinhash.png in Resources */ = {isa = PBXBuildFile; fileRef = BBC8298024EDACBB009D042C /* iinhash.png */; };
+		BBC8298724EE5853009D042C /* metal.png in Resources */ = {isa = PBXBuildFile; fileRef = BBC8298624EE5853009D042C /* metal.png */; };
 		BBCC9D962365430800424C83 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBCC9D952365430800424C83 /* SceneDelegate.m */; };
 		BBCE66E2249A807700F45269 /* alpine.tar.gz in Resources */ = {isa = PBXBuildFile; fileRef = BBF124901FA7C3100088FB50 /* alpine.tar.gz */; };
 		BBFB55662158644C00DFE6DE /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BBFB55652158644C00DFE6DE /* libresolv.tbd */; };
@@ -107,6 +127,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = BB13F7D0200ACCA2003D1C4D;
 			remoteInfo = Ninja;
+		};
+		BB4A922724ED940C002F5A96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB792B461F96D8E000FFB7A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB4A922324ED9402002F5A96;
+			remoteInfo = "iSH pre";
 		};
 		BB88F49D2154760800A341FD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -217,6 +244,9 @@
 		BB4A539C1FAA490C00A72ACE /* term.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = term.js; sourceTree = "<group>"; };
 		BB4A53A91FAA496700A72ACE /* term.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = term.html; sourceTree = "<group>"; };
 		BB4A53AF1FAA787900A72ACE /* term.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = term.css; sourceTree = "<group>"; };
+		BB4A922D24EDA461002F5A96 /* icon1337.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1337.png; sourceTree = "<group>"; };
+		BB4A922F24EDA55C002F5A96 /* colontildehash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colontildehash.png; sourceTree = "<group>"; };
+		BB4A923124EDA560002F5A96 /* 3d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3d.png; sourceTree = "<group>"; };
 		BB60F55021573FCA003A4E52 /* BarButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarButton.h; sourceTree = "<group>"; };
 		BB60F55121573FCA003A4E52 /* BarButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarButton.m; sourceTree = "<group>"; };
 		BB6DB260216435330047A611 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
@@ -356,6 +386,9 @@
 		BBAEE33B249BDADC0069EBB5 /* ProgressReportViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressReportViewController.m; sourceTree = "<group>"; };
 		BBBCE7E421D2F02200CA00B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/About.storyboard; sourceTree = "<group>"; };
 		BBBF7B5B2415CDBB00EC4C14 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		BBC8297D24EDAC11009D042C /* idollarhash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = idollarhash.png; sourceTree = "<group>"; };
+		BBC8298024EDACBB009D042C /* iinhash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iinhash.png; sourceTree = "<group>"; };
+		BBC8298624EE5853009D042C /* metal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metal.png; sourceTree = "<group>"; };
 		BBCC9D942365430800424C83 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		BBCC9D952365430800424C83 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		BBF124901FA7C3100088FB50 /* alpine.tar.gz */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = alpine.tar.gz; sourceTree = "<group>"; };
@@ -448,11 +481,17 @@
 			isa = PBXGroup;
 			children = (
 				BB0F552D239F8A790032A2A1 /* Icons.plist */,
+				BB4A923124EDA560002F5A96 /* 3d.png */,
+				BB4A922F24EDA55C002F5A96 /* colontildehash.png */,
 				BB1B9A4223A5E96900414052 /* icon.png */,
-				BB0F552F239F8B360032A2A1 /* uninspired.png */,
+				BB4A922D24EDA461002F5A96 /* icon1337.png */,
+				BBC8297D24EDAC11009D042C /* idollarhash.png */,
+				BB0F553323A0AC760032A2A1 /* ihash1.png */,
+				BBC8298024EDACBB009D042C /* iinhash.png */,
 				BB0F553123A0AB9B0032A2A1 /* pydann1.png */,
 				BB0F553523A0ACFC0032A2A1 /* pydann2.png */,
-				BB0F553323A0AC760032A2A1 /* ihash1.png */,
+				BB0F552F239F8B360032A2A1 /* uninspired.png */,
+				BBC8298624EE5853009D042C /* metal.png */,
 			);
 			path = Icons;
 			sourceTree = "<group>";
@@ -904,6 +943,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BB4A922824ED940C002F5A96 /* PBXTargetDependency */,
 				BB10E5CB248DBAB7009C7A74 /* PBXTargetDependency */,
 				BB13F7E7200AD874003D1C4D /* PBXTargetDependency */,
 				BB88F49E2154760800A341FD /* PBXTargetDependency */,
@@ -955,6 +995,11 @@
 						DevelopmentTeam = CK5SXRTBR7;
 						ProvisioningStyle = Automatic;
 					};
+					BB4A922324ED9402002F5A96 = {
+						CreatedOnToolsVersion = 11.5;
+						DevelopmentTeam = CK5SXRTBR7;
+						ProvisioningStyle = Automatic;
+					};
 					BB792B4F1F96D90D00FFB7A4 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -1000,6 +1045,7 @@
 				BB13F7CA200ACC31003D1C4D /* Meson */,
 				BB13F7D0200ACCA2003D1C4D /* Ninja */,
 				BB13F7DB200AD81D003D1C4D /* libish */,
+				BB4A922324ED9402002F5A96 /* iSH pre */,
 			);
 		};
 /* End PBXProject section */
@@ -1019,6 +1065,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB4A923224EDA560002F5A96 /* 3d.png in Resources */,
+				BB4A923024EDA55C002F5A96 /* colontildehash.png in Resources */,
+				BBC8298724EE5853009D042C /* metal.png in Resources */,
 				BB792B5D1F96D90D00FFB7A4 /* Assets.xcassets in Resources */,
 				BB792B601F96D90D00FFB7A4 /* LaunchScreen.storyboard in Resources */,
 				BBBF7B5C2415CDBB00EC4C14 /* Settings.bundle in Resources */,
@@ -1027,12 +1076,15 @@
 				BB792B5B1F96D90D00FFB7A4 /* Terminal.storyboard in Resources */,
 				BB0F552E239F8A790032A2A1 /* Icons.plist in Resources */,
 				BB0F5530239F8B360032A2A1 /* uninspired.png in Resources */,
+				BBC8298124EDACBB009D042C /* iinhash.png in Resources */,
 				BB0F553623A0ACFC0032A2A1 /* pydann2.png in Resources */,
 				BB0F553423A0AC760032A2A1 /* ihash1.png in Resources */,
 				BB2B4DAF231D998300CB578B /* term.html in Resources */,
 				BB10E5D0248DC21D009C7A74 /* Roots.storyboard in Resources */,
 				BBCE66E2249A807700F45269 /* alpine.tar.gz in Resources */,
+				BBC8297E24EDAC11009D042C /* idollarhash.png in Resources */,
 				BB2B4DAC231D94C300CB578B /* hterm_all.js in Resources */,
+				BB4A922E24EDA461002F5A96 /* icon1337.png in Resources */,
 				BB2B4DAE231D998300CB578B /* term.css in Resources */,
 				BB2B4DAD231D998300CB578B /* term.js in Resources */,
 				BB1B9A4323A5E96900414052 /* icon.png in Resources */,
@@ -1078,6 +1130,26 @@
 			shellPath = "/bin/sh -e";
 			shellScript = "cd $SRCROOT/deps/libapps\n./hterm/bin/mkdist\n";
 			showEnvVarsInLog = 0;
+		};
+		BB4A922A24ED9421002F5A96 /* Add icons to Info.plist */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/app/Icons/Icons.plist",
+			);
+			name = "Add icons to Info.plist";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/infoplisticons.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "python3 - \"${SRCROOT}/app/Icons/Icons.plist\" \"${BUILT_PRODUCTS_DIR}/infoplisticons.h\" <<END\nimport plistlib\nimport sys\nprint(sys.argv)\nwith open(sys.argv[1], 'rb') as plist:\n    icons = plistlib.load(plist)\nalt_icons = '<key>CFBundleAlternateIcons</key><dict>'\nfor icon in icons.keys():\n    if icon == '': continue\n    alt_icons += '''<key>{0}</key>\n<dict>\n<key>CFBundleIconFiles</key>\n<array><string>{0}</string></array>\n</dict>'''.format(icon)\nalt_icons += '</dict>'\nicon_stuff = '''</string>\n<key>CFBundleIcons</key><dict>{0}</dict>\n<key>CFBundleIcons~ipad</key><dict>{0}</dict>\n<key>kxcode</key><string>'''.format(alt_icons)\nicon_define = '#define ICON_STUFF ' + icon_stuff.replace('\\n', '')\nwith open(sys.argv[2], 'w') as output:\n    output.write(icon_define)\nEND\ntouch \"${SRCROOT}/app/Info.plist\"\n";
 		};
 		BBF1248B1FA7BF530088FB50 /* Download Alpine */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1167,6 +1239,11 @@
 			isa = PBXTargetDependency;
 			target = BB13F7D0200ACCA2003D1C4D /* Ninja */;
 			targetProxy = BB13F7E8200AD967003D1C4D /* PBXContainerItemProxy */;
+		};
+		BB4A922824ED940C002F5A96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB4A922324ED9402002F5A96 /* iSH pre */;
+			targetProxy = BB4A922724ED940C002F5A96 /* PBXContainerItemProxy */;
 		};
 		BB88F49E2154760800A341FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1401,6 +1478,24 @@
 			};
 			name = Release;
 		};
+		BB4A922524ED9402002F5A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CK5SXRTBR7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BB4A922624ED9402002F5A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CK5SXRTBR7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		BB792B4A1F96D8E000FFB7A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB9C7B88240A343400F5D4F0 /* iSH.xcconfig */;
@@ -1551,6 +1646,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				INFOPLIST_PREFIX_HEADER = "$(BUILT_PRODUCTS_DIR)/infoplisticons.h";
+				INFOPLIST_PREPROCESS = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamrecursion.iSH;
@@ -1619,6 +1717,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				INFOPLIST_PREFIX_HEADER = "$(BUILT_PRODUCTS_DIR)/infoplisticons.h";
+				INFOPLIST_PREPROCESS = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamrecursion.iSH;
@@ -1747,6 +1848,15 @@
 			buildConfigurations = (
 				BB13F7E3200AD81E003D1C4D /* Debug */,
 				BB13F7E4200AD81E003D1C4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB4A922424ED9402002F5A96 /* Build configuration list for PBXAggregateTarget "iSH pre" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB4A922524ED9402002F5A96 /* Debug */,
+				BB4A922624ED9402002F5A96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

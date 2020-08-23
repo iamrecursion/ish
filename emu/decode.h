@@ -294,12 +294,12 @@ restart:
 
                 case 0x73: READMODRM_NOMEM;
                            switch (modrm.opcode) {
-                               case 0x02: TRACEI("psrlq imm, xmm");
-                                          READIMM8; V_OP(imm_shiftr_q, imm, xmm_modrm_reg, 128); break;
-
-                               case 0x06: TRACEI("psllq imm, xmm");
-                                          READIMM8; V_OP(imm_shiftl_q, imm, xmm_modrm_reg, 128); break;
-
+                               case 2: TRACEI("psrlq imm, xmm");
+                                       READIMM8; V_OP(imm_shiftr_q, imm, xmm_modrm_reg, 128); break;
+                               case 6: TRACEI("psllq imm, xmm");
+                                       READIMM8; V_OP(imm_shiftl_q, imm, xmm_modrm_reg, 128); break;
+                               case 7: TRACEI("pslldq imm, xmm");
+                                       READIMM8; V_OP(imm_shiftl_dq, imm, xmm_modrm_reg, 128); break;
                                default: UNDEFINED;
                            }
                            break;
@@ -987,6 +987,8 @@ restart:
                         case 0x5a: TRACEI("cvtsd2ss xmm:modrm, xmm");
                                    READMODRM; V_OP(cvtsd2ss, xmm_modrm_val, xmm_modrm_reg,64); break;
 
+                        case 0x51: TRACEI("sqrtsd xmm:modrm, xmm");
+                                   READMODRM; V_OP(single_fsqrt, xmm_modrm_val, xmm_modrm_reg,64); break;
                         case 0x58: TRACEI("addsd xmm:modrm, xmm");
                                    READMODRM; V_OP(single_fadd, xmm_modrm_val, xmm_modrm_reg,64); break;
                         case 0x59: TRACEI("mulsd xmm:modrm, xmm");

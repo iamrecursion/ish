@@ -61,6 +61,13 @@ void vec_imm_shiftr_q64(NO_CPU, const uint8_t amount, union mm_reg *dst) {
         dst->qw >>= amount;
 }
 
+void vec_imm_shiftl_dq128(NO_CPU, uint8_t amount, union xmm_reg *dst) {
+    if (amount >= 16)
+        zero_xmm(dst);
+    else
+        dst->u128 <<= amount * 8;
+}
+
 void vec_shiftl_q128(NO_CPU, union xmm_reg *amount, union xmm_reg *dst) {
     uint64_t amount_qw = amount->qw[0];
 
@@ -160,6 +167,8 @@ void vec_single_fsub64(NO_CPU, const double *src, double *dst) { *dst -= *src; }
 void vec_single_fsub32(NO_CPU, const float *src, float *dst) { *dst -= *src; }
 void vec_single_fdiv64(NO_CPU, const double *src, double *dst) { *dst /= *src; }
 void vec_single_fdiv32(NO_CPU, const float *src, float *dst) { *dst /= *src; }
+
+void vec_single_fsqrt64(NO_CPU, const double *src, double *dst) { *dst = sqrt(*src); }
 
 void vec_single_fmax64(NO_CPU, const double *src, double *dst) {
     if (*src > *dst || isnan(*src) || isnan(*dst)) *dst = *src;
