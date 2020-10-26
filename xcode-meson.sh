@@ -4,7 +4,7 @@ cd $MESON_BUILD_DIR
 
 config=$(meson introspect --buildoptions)
 if [[ $? -ne 0 ]]; then
-    export CC_FOR_BUILD="env -u SDKROOT -u IPHONEOS_DEPLOYMENT_TARGET clang"
+    export CC_FOR_BUILD="env -u SDKROOT -u IPHONEOS_DEPLOYMENT_TARGET xcrun clang"
     export CC="$CC_FOR_BUILD" # compatibility with meson < 0.54.0
     crossfile=cross.txt
     echo $ARCHS
@@ -38,7 +38,6 @@ buildtype=debug
 b_ndebug=false
 if [[ $CONFIGURATION == Release ]]; then
     buildtype=debugoptimized
-    b_ndebug=true
 fi
 b_sanitize=none
 if [[ -n "$ENABLE_ADDRESS_SANITIZER" ]]; then

@@ -24,14 +24,11 @@
 
 @property (weak, nonatomic) IBOutlet UITableViewCell *exportContainerCell;
 
+@property (weak, nonatomic) IBOutlet UILabel *versionLabel;
+
 @end
 
 @implementation AboutViewController
-
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    [self _addObservers];
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -45,33 +42,29 @@
                                                                                  action:@selector(exitRecovery:)];
         self.navigationItem.leftBarButtonItem = nil;
     }
-}
+    _versionLabel.text = [NSString stringWithFormat:@"iSH %@ (Build %@)",
+                          [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"],
+                          [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]];
 
-- (void)exitRecovery:(id)sender {
-    [NSUserDefaults.standardUserDefaults setBool:NO forKey:@"recovery"];
-    exit(0);
-}
-
-- (void)dealloc {
-    [self _removeObservers];
-}
-
-- (void)_addObservers {
     UserPreferences *prefs = [UserPreferences shared];
     NSKeyValueObservingOptions opts = NSKeyValueObservingOptionNew;
-    
     [prefs addObserver:self forKeyPath:@"capsLockMapping" options:opts context:nil];
     [prefs addObserver:self forKeyPath:@"fontSize" options:opts context:nil];
     [prefs addObserver:self forKeyPath:@"launchCommand" options:opts context:nil];
     [prefs addObserver:self forKeyPath:@"bootCommand" options:opts context:nil];
 }
 
-- (void)_removeObservers {
+- (void)dealloc {
     UserPreferences *prefs = [UserPreferences shared];
     [prefs removeObserver:self forKeyPath:@"capsLockMapping"];
     [prefs removeObserver:self forKeyPath:@"fontSize"];
     [prefs removeObserver:self forKeyPath:@"launchCommand"];
     [prefs removeObserver:self forKeyPath:@"bootCommand"];
+}
+
+- (void)exitRecovery:(id)sender {
+    [NSUserDefaults.standardUserDefaults setBool:NO forKey:@"recovery"];
+    exit(0);
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
