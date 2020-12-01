@@ -266,7 +266,7 @@
         pad = self.view.safeAreaInsets.bottom;
     }
     // NSLog(@"pad %f", pad);
-    self.bottomConstraint.constant = -pad;
+    self.bottomConstraint.constant = pad;
 
     BOOL initialLayout = self.termView.needsUpdateConstraints;
     [self.view setNeedsUpdateConstraints];
@@ -302,6 +302,14 @@
     if ([UserPreferences.shared hasChangedLaunchCommand])
         [alert addAction:[UIAlertAction actionWithTitle:@"i typed the init command wrong, let me fix it" style:UIAlertActionStyleDefault handler:nil]];
     [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"embed"]) {
+        // You might want to check if this is your embed segue here
+        // in case there are other segues triggered from this view controller.
+        segue.destinationViewController.view.translatesAutoresizingMaskIntoConstraints = NO;
+    }
 }
 
 #pragma mark Bar
